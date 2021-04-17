@@ -1,9 +1,11 @@
 import React from 'react';
+import BaseLayout from './components/BaseLayout';
+import GiveConsent from './pages/GiveConsent';
 
 const App = () => (
-  <div>
-    Hello World Didomi
-  </div>
+  <BaseLayout>
+    <GiveConsent />
+  </BaseLayout>
 );
 
 export default App;
