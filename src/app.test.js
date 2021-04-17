@@ -4,5 +4,5 @@ import App from 'src/App';
 
 it('Test', () => {
   const { getByText } = render(<App />);
-  getByText('Hello World');
+  getByText('Hello World Didomi');
 });
