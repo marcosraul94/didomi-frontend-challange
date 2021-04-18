@@ -20,7 +20,8 @@
         "react"
     ],
     "rules": {
-        "react/jsx-filename-extension": "off"
+        "react/jsx-filename-extension": "off",
+        "no-param-reassign": "off"
     },
     "settings": {
         "import/resolver": {
