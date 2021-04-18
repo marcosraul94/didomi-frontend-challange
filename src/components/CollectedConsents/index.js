@@ -11,7 +11,7 @@ const CollectedConsents = () => {
   const page = useSelector(selectPage);
   const consents = useSelector(selectConsents);
 
-  const isConsentsListEmpty = !consents.length > 0;
+  const isConsentsListEmpty = !(consents.length > 0);
   const rowsPerPage = 2;
   const totalPages = Math.ceil(consents.length / rowsPerPage);
   const startIndex = rowsPerPage * page;
