@@ -21,7 +21,8 @@
     ],
     "rules": {
         "react/jsx-filename-extension": "off",
-        "no-param-reassign": "off"
+        "no-param-reassign": "off",
+        "jsx-a11y/click-events-have-key-events": "off"
     },
     "settings": {
         "import/resolver": {
