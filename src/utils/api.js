@@ -1,6 +1,5 @@
 import mockedDb from './db';
-
-const mockAsyncCall = () => new Promise((resolve) => setTimeout(resolve, 500));
+import mockAsyncCall from './helperAsync';
 
 export const addNewUser = async (newUserData) => {
   await mockAsyncCall();

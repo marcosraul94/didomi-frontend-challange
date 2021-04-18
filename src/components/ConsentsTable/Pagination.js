@@ -4,7 +4,7 @@ import useStyles from './styles';
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   const pagesText = [...Array(totalPages + 1).keys()].slice(1).join(' ');
-  const isPrevPageAvailable = currentPage >= 1;
+  const isPrevPageAvailable = currentPage > 0;
   const isNextPageAvailable = currentPage < totalPages - 1;
   const classes = useStyles({ isNextPageAvailable, isPrevPageAvailable });
 

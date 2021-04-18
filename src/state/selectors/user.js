@@ -1,7 +1,7 @@
-export const selectUser = (state) => state.user;
+export const selectUserState = (state) => state.user;
 
-export const selectUserName = (state) => selectUser(state).name;
+export const selectUserName = (state) => selectUserState(state).name;
 
-export const selectUserEmail = (state) => selectUser(state).email;
+export const selectUserEmail = (state) => selectUserState(state).email;
 
-export const selectUserAgreements = (state) => selectUser(state).agreements;
+export const selectUserAgreements = (state) => selectUserState(state).agreements;

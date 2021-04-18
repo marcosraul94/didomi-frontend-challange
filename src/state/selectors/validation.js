@@ -1,5 +1,5 @@
-export const selectValidation = (state) => state.validation;
+export const selectValidationState = (state) => state.validation;
 
-export const selectNameError = (state) => selectValidation(state).name.error;
+export const selectNameError = (state) => selectValidationState(state).name.error;
 
-export const selectEmailError = (state) => selectValidation(state).email.error;
+export const selectEmailError = (state) => selectValidationState(state).email.error;

@@ -1,4 +1,4 @@
-const dumbData = [
+export const dumbData = [
   { name: 'Bojack Horseman', email: 'bojack@horseman.com', agreements: ['Receive newsletter', 'Be shown targeted ads'] },
   { name: 'Princess Carolyn', email: 'princess@manager.com', agreements: ['Receive newsletter'] },
   { name: 'SpongeBob', email: 'spongebob@nick.com', agreements: ['Receive newsletter', 'Be shown targeted ads'] },
