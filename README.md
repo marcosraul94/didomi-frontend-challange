@@ -1,6 +1,7 @@
 # Didomi frontend challenge
 Simple challenge project for Didomi application, ships with React, Redux, React testing library, a simple Webpack server, Babel and Travis for automated testing in the cloud.
 
+![demo](https://user-images.githubusercontent.com/45175934/115163699-9c13e000-a078-11eb-8ee6-5f0dbe5e2818.gif)
 
 ## Prerequisites
 - node
