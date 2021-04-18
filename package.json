@@ -5,7 +5,7 @@
   "private": "true",
   "homepage": "https://marcosraul94.github.io/didomi-frontend-challenge",
   "scripts": {
-    "lint": "eslint ./src/*js",
+    "lint": "eslint ./src --ext .js",
     "lint-precommit-setup": "yarn husky install",
     "start": "webpack serve --config ./webpack.config.js --mode development --open",
     "build": "webpack --mode production",
@@ -22,7 +22,7 @@
     ]
   },
   "lint-staged": {
-    "src/*js": [
+    "src/**/*.js": [
       "yarn lint"
     ]
   },

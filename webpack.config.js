@@ -39,6 +39,7 @@ module.exports = {
     },
   },
   plugins: [htmlPlugin],
+  devtool: 'eval-cheap-source-map',
   devServer: {
     contentBase: outputPath,
     port: 4200,
