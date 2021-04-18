@@ -10,6 +10,9 @@ const StyledButton = styled(Button)({
   borderRadius: 10,
   fontSize: '1.2rem',
   border: '1px solid #40749f',
+  '&:disabled': {
+    border: 'none',
+  },
   '&:hover': {
     backgroundColor: '#dae8fc',
     color: 'black',

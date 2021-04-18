@@ -1,4 +1,7 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectUserAgreements } from 'src/state/selectors/user';
+import { addUserAgreement, removeUserAgreement } from 'src/state/slices/user';
 import Checkbox from '../Checkbox';
 import { AgreementsInnerContainer } from './styles';
 
@@ -9,10 +12,12 @@ const agreements = [
 ];
 
 const AgreementsList = () => {
-  const checkedAgreements = [];
+  const dispatch = useDispatch();
+  const checkedAgreements = useSelector(selectUserAgreements);
 
-  const handleChange = (label, updatedIsChecked) => {
-    console.log(label, updatedIsChecked);
+  const handleChange = (agreement, updatedIsChecked) => {
+    if (updatedIsChecked) dispatch(addUserAgreement(agreement));
+    else dispatch(removeUserAgreement(agreement));
   };
 
   return (

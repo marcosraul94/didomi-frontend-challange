@@ -24,7 +24,7 @@ const babelLoader = {
 };
 
 module.exports = {
-  entry,
+  entry: ['@babel/polyfill', entry],
   output: {
     path: outputPath,
     filename: outputFilename,
