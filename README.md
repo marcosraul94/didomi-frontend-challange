@@ -1,5 +1,5 @@
 # Didomi frontend challenge
-Simple challenge project for Didomi application, ships with React, Redux, React testing library, a simple Webpack server, Babel and Travis for automated testing in the cloud.
+Simple challenge project for Didomi application, ships with React, Material UI, Redux, React testing library, a simple Webpack server, Babel and Travis for automated testing in the cloud.
 
 ![demo](https://user-images.githubusercontent.com/45175934/115163699-9c13e000-a078-11eb-8ee6-5f0dbe5e2818.gif)
 
@@ -44,5 +44,6 @@ yarn lint
 5. [Travis CI](https://travis-ci.org/)
 6. [ESlint](https://eslint.org/)
 7. [Husky](https://typicode.github.io/husky/#/) and [lint-staged](https://github.com/okonet/lint-staged#readme)
+8. [Material UI](https://material-ui.com/)
 
 
