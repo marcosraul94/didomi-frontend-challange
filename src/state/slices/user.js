@@ -1,6 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
 import {
   setUserName as setUserNameReducer,
+  setUserEmail as setUserEmailReducer,
+  setUserAgreements as setUserAgreementsReducer,
+  addUserAgreement as addUserAgreementReducer,
+  removeUserAgreement as removeUserAgreementReducer,
 } from '../reducers/user';
 
 const initialState = {
@@ -14,9 +18,18 @@ export const userSlice = createSlice({
   initialState,
   reducers: {
     setUserName: setUserNameReducer,
-    // setNewUserEmail: setNewUserEmailReducer,
+    setUserEmail: setUserEmailReducer,
+    setUserAgreements: setUserAgreementsReducer,
+    addUserAgreement: addUserAgreementReducer,
+    removeUserAgreement: removeUserAgreementReducer,
   },
 });
 
-export const { setUserName } = userSlice.actions;
+export const {
+  setUserName,
+  setUserEmail,
+  setUserAgreements,
+  addUserAgreement,
+  removeUserAgreement,
+} = userSlice.actions;
 export default userSlice.reducer;

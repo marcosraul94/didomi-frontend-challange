@@ -4,14 +4,14 @@ import ShorterTextField from './styles';
 
 const TextInput = ({
   value,
-  label,
+  placeholder,
   onChange,
   error,
 }) => (
   <ShorterTextField
     variant="outlined"
     value={value}
-    label={label}
+    placeholder={placeholder}
     onChange={onChange}
     error={Boolean(error)}
     helperText={error}
@@ -20,14 +20,14 @@ const TextInput = ({
 
 TextInput.propTypes = {
   value: PropTypes.string,
-  label: PropTypes.string,
+  placeholder: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   error: PropTypes.string,
 };
 
 TextInput.defaultProps = {
   value: '',
-  label: '',
+  placeholder: '',
   error: '',
 };
 

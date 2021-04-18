@@ -6,6 +6,10 @@ export const setUserEmail = (userState, { payload }) => {
   userState.email = payload;
 };
 
+export const setUserAgreements = (userState, { payload }) => {
+  userState.agreements = payload;
+};
+
 export const addUserAgreement = (userState, { payload }) => {
   userState.agreements = [...userState.agreements, payload];
 };
