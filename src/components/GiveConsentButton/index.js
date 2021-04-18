@@ -33,6 +33,7 @@ const GiveConsentButton = () => {
     dispatch(setEmailError(emailError));
 
     if (nameError || emailError) return;
+
     const newUserData = { name, email, agreements };
     await addNewUser(newUserData);
     clearUserData();
