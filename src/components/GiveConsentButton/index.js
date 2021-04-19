@@ -22,7 +22,7 @@ const GiveConsentButton = () => {
     dispatch(setUserName(''));
     dispatch(setUserEmail(''));
     dispatch(setUserAgreements([]));
-    dispatch(setPage(1));
+    dispatch(setPage(0));
   };
 
   const handleClick = async () => {
