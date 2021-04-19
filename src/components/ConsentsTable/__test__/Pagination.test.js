@@ -7,7 +7,10 @@ const Component = <Pagination currentPage={2} totalPages={4} onPageChange={() =>
 describe('Pagination component', () => {
   it('displays pages', () => {
     const { getByText } = render(Component);
-    getByText('1 2 3 4');
+    getByText('1_');
+    getByText('2_');
+    getByText('3_');
+    getByText('4');
   });
 
   it('displays both page controllers', () => {
